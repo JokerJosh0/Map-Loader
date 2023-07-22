@@ -7,6 +7,12 @@ this is an overly advanced map-loader for your unity game.
 ![](https://github.com/JokerJosh0/Map-Loader/assets/137851579/5916e24d-8107-4e27-a63d-dbd5f65c11b1)
 
 
+# Getting Started
+
+![](https://github.com/JokerJosh0/Map-Loader/assets/137851579/03f7f3c7-bfff-4d21-80ad-126e120b56d4)
+
+The Recognised Collider variable is used to verify that what is entering the loader is the player.
+Set this as your players body collider.
 
 
 # Getting Started - Maps
@@ -19,13 +25,15 @@ Unique ID - used for referencing in a script using:
 ```cs
 Map.Change("uniqueId");
 ```
-Enable - Objects you want to enable once the dunction is called upon.
+Enable - Objects you want to enable once the function is called upon.
 
-Disable - Objects you want to disable once the dunction is called upon.
+Disable - Objects you want to disable once the function is called upon.
 
 Disable On Start - If checked, everything in the Enable variable will be disabled upon starting the game.
 
 # Getting Started - Loaders
+
+Dont worry about using colliders, its all handled for you :) but you are limited to only having box-shaped loaders.
 
 ![](https://github.com/JokerJosh0/Map-Loader/assets/137851579/41b7c1ad-c697-4529-a60d-8ccbda88f981)
 
@@ -36,6 +44,9 @@ Loader GameObject - This is the gameObject that will be used for handling the ma
 ID To Change - This is the ID of the map that you want to change  (this can be found in the Maps list)
 
 Dynamic Handle - This is used when you want the client to pass the loader and everything in the Enable variable will enable etc, but when the client goes back out the loader then everything in the Enable variable will be disabled. when this is ticked off, it will just call the change method as normal.
+```cs
+Map.Change("uniqueId", dynamicHandle: true : false);
+```
 
 # Loaders - Advanced
 
@@ -47,3 +58,7 @@ If you select the maploader gameobject (the object with the maploader script) an
 idk i just thought this was cool when making it :)
 
 
+
+```js
+Created By JokerJosh - discord: joker.josh
+```
