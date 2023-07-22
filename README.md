@@ -17,7 +17,7 @@ Set this as your players body collider.
 
 # Getting Started - Maps
 
-![]((https://cdn.discordapp.com/attachments/1132271654333071370/1132271716417146971/maps.PNG))
+![](https://cdn.discordapp.com/attachments/1132271654333071370/1132271716417146971/maps.PNG)
 
 Once you add a map via the + button, you will see 4 variables - Unique Id, Enable, Disable, and Disable On Start. 
 
