@@ -2,7 +2,7 @@
 this is an overly advanced map-loader for your unity game.
 
 [![Download](https://img.shields.io/badge/Download-blue.svg)](https://github.com/JokerJosh0/Map-Loader/releases)
-[![Help Discord](https://img.shields.io/badge/Download-blue.svg)](https://discord.gg/VnjNfXYN4M)
+[![Discord](https://img.shields.io/badge/Discord-blue.svg)](https://discord.gg/VnjNfXYN4M)
 
 ![](https://github.com/JokerJosh0/Map-Loader/assets/137851579/5916e24d-8107-4e27-a63d-dbd5f65c11b1)
 
