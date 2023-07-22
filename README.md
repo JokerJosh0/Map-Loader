@@ -4,12 +4,12 @@ this is an overly advanced map-loader for your unity game.
 [![Download](https://img.shields.io/badge/Download-blue.svg)](https://github.com/JokerJosh0/Map-Loader/releases)
 [![Discord](https://img.shields.io/badge/Discord-blue.svg)](https://discord.gg/VnjNfXYN4M)
 
-![](https://github.com/JokerJosh0/Map-Loader/assets/137851579/5916e24d-8107-4e27-a63d-dbd5f65c11b1)
+![]([https://github.com/JokerJosh0/Map-Loader/assets/137851579/5916e24d-8107-4e27-a63d-dbd5f65c11b1](https://cdn.discordapp.com/attachments/1132271654333071370/1132272170534445096/DALL_E_2023-07-22_17.34.59-removebg-preview_1.png))
 
 
 # Getting Started
 
-![](https://github.com/JokerJosh0/Map-Loader/assets/137851579/03f7f3c7-bfff-4d21-80ad-126e120b56d4)
+![](https://cdn.discordapp.com/attachments/1132271654333071370/1132271715544731718/collider.PNG))
 
 The Recognised Collider variable is used to verify that what is entering the loader is the player.
 Set this as your players body collider.
@@ -17,7 +17,7 @@ Set this as your players body collider.
 
 # Getting Started - Maps
 
-![](https://github.com/JokerJosh0/Map-Loader/assets/137851579/eba770cb-50ad-4eb4-bbca-79277a2435ff)
+![]((https://cdn.discordapp.com/attachments/1132271654333071370/1132271716417146971/maps.PNG))
 
 Once you add a map via the + button, you will see 4 variables - Unique Id, Enable, Disable, and Disable On Start. 
 
@@ -35,7 +35,7 @@ Disable On Start - If checked, everything in the Enable variable will be disable
 
 Dont worry about using colliders, its all handled for you :) but you are limited to only having box-shaped loaders.
 
-![](https://github.com/JokerJosh0/Map-Loader/assets/137851579/41b7c1ad-c697-4529-a60d-8ccbda88f981)
+![](https://cdn.discordapp.com/attachments/1132271654333071370/1132271716085792838/loaders.PNG)
 
 Once you add a loader via the + button, you will see 3 variables - Loader GameObject, ID To Change, and Dynamic Handle
 
@@ -50,7 +50,7 @@ Map.Change("uniqueId", dynamicHandle: true : false);
 
 # Loaders - Advanced
 
-![](https://github.com/JokerJosh0/Map-Loader/assets/137851579/7e3bc07f-e4e4-4482-9cce-17ec7f54e23c)
+![](https://cdn.discordapp.com/attachments/1132271654333071370/1132271715834150912/loader.PNG)
 
 
 If you select the maploader gameobject (the object with the maploader script) and enable gizmos, you will be able to see every loader that youve added , outlined in a box. This box with display the ID of the loader, and when you hover over it with your mouse it wil highlight dark blue, but once you click on it, the loader gameObject will be selected
