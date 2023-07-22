@@ -9,7 +9,7 @@ this is an overly advanced map-loader for your unity game.
 
 # Getting Started
 
-![](https://cdn.discordapp.com/attachments/1132271654333071370/1132271715544731718/collider.PNG))
+![](https://cdn.discordapp.com/attachments/1132271654333071370/1132271715544731718/collider.PNG)
 
 The Recognised Collider variable is used to verify that what is entering the loader is the player.
 Set this as your players body collider.
