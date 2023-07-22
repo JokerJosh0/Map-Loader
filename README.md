@@ -4,7 +4,7 @@ this is an overly advanced map-loader for your unity game.
 [![Download](https://img.shields.io/badge/Download-blue.svg)](https://github.com/JokerJosh0/Map-Loader/releases)
 [![Discord](https://img.shields.io/badge/Discord-blue.svg)](https://discord.gg/VnjNfXYN4M)
 
-![]([https://github.com/JokerJosh0/Map-Loader/assets/137851579/5916e24d-8107-4e27-a63d-dbd5f65c11b1](https://cdn.discordapp.com/attachments/1132271654333071370/1132272170534445096/DALL_E_2023-07-22_17.34.59-removebg-preview_1.png))
+![](https://cdn.discordapp.com/attachments/1132271654333071370/1132272170534445096/DALL_E_2023-07-22_17.34.59-removebg-preview_1.png))
 
 
 # Getting Started
