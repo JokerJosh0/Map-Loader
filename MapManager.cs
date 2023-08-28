@@ -56,37 +56,41 @@ public class MapManager : MonoBehaviour
             }
         }
     }
+
     private bool wasMainCameraColliding = false;
+    Loader selectedLoader;
     private void Update()
     {
         bool isMainCameraColliding = false;
-        Loader selectedLoader = new Loader();
+
         for (int i = 0; i < Loaders.Count; i++)
         {
-            Loader loader = Loaders[i];
-            Vector3 loaderPosition = loader.LoaderGameObject.transform.position;
-            Vector3 loaderScale = loader.LoaderGameObject.transform.localScale;
-            Quaternion loaderRotation = loader.LoaderGameObject.transform.rotation;
-
-            if (Physics.CheckBox(loaderPosition, loaderScale, loaderRotation))
+            if (Physics.CheckBox(Loaders[i].LoaderGameObject.transform.position, Loaders[i].LoaderGameObject.transform.localScale, Loaders[i].LoaderGameObject.transform.rotation))
             {
-                Collider[] colliders = Physics.OverlapBox(loaderPosition, loaderScale, loaderRotation);
+                Collider[] colliders = Physics.OverlapBox(Loaders[i].LoaderGameObject.transform.position, Loaders[i].LoaderGameObject.transform.localScale, Loaders[i].LoaderGameObject.transform.rotation);
 
                 foreach (Collider collider in colliders)
                 {
                     if (collider == recognisedCollider)
                     {
+                        selectedLoader = Loaders[i];
                         isMainCameraColliding = true;
-                        selectedLoader = loader;
-                        break;
                     }
                 }
             }
         }
-
-        if (!wasMainCameraColliding && isMainCameraColliding)
+        if (wasMainCameraColliding && !isMainCameraColliding)
         {
-            Map.Change(selectedLoader.IdToChange, selectedLoader.dynamicHandle);
+            Vector3 currentColliderPosition = recognisedCollider.transform.position;
+            Vector3 loaderToPreviousCollider = selectedLoader.LoaderGameObject.transform.position;
+            Vector3 loaderToCurrentCollider = currentColliderPosition - selectedLoader.LoaderGameObject.transform.position;
+
+            float dotProduct = Vector3.Dot(loaderToPreviousCollider, loaderToCurrentCollider);
+
+            if (dotProduct < 0)
+            {
+                Map.Change(selectedLoader.IdToChange, selectedLoader.dynamicHandle);
+            }
         }
 
         wasMainCameraColliding = isMainCameraColliding;
@@ -103,20 +107,24 @@ public static class Map
         {
             foreach (GameObject x in foundComponent.enable)
             {
+                if (x == null) return;
                 x.SetActive(true);
             }
             foreach (GameObject x in foundComponent.disable)
             {
+                if (x == null) return;
                 x.SetActive(false);
             }
         }else
         {
             foreach (GameObject x in foundComponent.enable)
             {
+                if (x == null) return;
                 x.SetActive(!x.activeSelf);
             }
             foreach (GameObject x in foundComponent.disable)
             {
+                if (x == null) return;
                 x.SetActive(!x.activeSelf);
             }
         }
